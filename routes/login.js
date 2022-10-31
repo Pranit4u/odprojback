@@ -10,7 +10,7 @@ router.route('/').post((req,res) => {
                    res.send({message:user})
                }
                else{
-                   res.send({})
+                   res.send({message:"0"})
                }
             }else{
                 res.send({})
