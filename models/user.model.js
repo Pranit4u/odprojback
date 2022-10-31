@@ -11,6 +11,6 @@ const userSchema = new Schema({
     dept: {type: String}
 });
 
-const UserData = mongoose.model('UserData',userSchema);
+const UserData = mongoose.model('User',userSchema);
 
 module.exports = UserData;
