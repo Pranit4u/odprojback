@@ -7,7 +7,8 @@ const userSchema = new Schema({
     roll: {type: String},
     email: {type: String},
     password: {type: String},
-    auth: {type: String}
+    auth: {type: String},
+    dept: {type: String}
 });
 
 const UserData = mongoose.model('UserData',userSchema);
