@@ -14,7 +14,9 @@ const complaintSchema = new Schema({
     resolved_department: {type: Boolean},
     status: {type: String},
     date: {type: String},
-    votelist: {type: Array}
+    votelist: {type: Array},
+    ongoing: {type: String},
+    resolved: {type: String}
 });
 
 const Complaint = mongoose.model('Complaint',complaintSchema);
