@@ -31,7 +31,8 @@ router.route('/add').post((req, res) => {
         votes: 1,
         votelist: [roll],
         ongoing: "",
-        resolved: ""
+        resolved: "",
+        escalated: false
     });
 
     newComplaint.save((err, result) => {
