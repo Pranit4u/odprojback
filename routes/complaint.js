@@ -30,8 +30,8 @@ router.route('/add').post((req, res) => {
         date: getCurrentDate(),
         votes: 1,
         votelist: [roll],
-        ongoing,
-        resolved
+        ongoing: "",
+        resolved: ""
     });
 
     newComplaint.save((err, result) => {
