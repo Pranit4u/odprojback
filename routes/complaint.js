@@ -31,7 +31,7 @@ router.route('/add').post((req, res) => {
         votes: 1,
         votelist: [roll],
         ongoing: "",
-        resolved: "",
+        addressed: "",
         escalated: false
     });
 

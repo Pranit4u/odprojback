@@ -16,7 +16,7 @@ const complaintSchema = new Schema({
     date: {type: String},
     votelist: {type: Array},
     ongoing: {type: String},
-    resolved: {type: String},
+    addressed: {type: String},
     escalated: {type:Boolean}
 });
 
