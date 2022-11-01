@@ -29,7 +29,9 @@ router.route('/add').post((req, res) => {
         status: "Not Started",
         date: getCurrentDate(),
         votes: 1,
-        votelist: [roll]
+        votelist: [roll],
+        ongoing,
+        resolved
     });
 
     newComplaint.save((err, result) => {
