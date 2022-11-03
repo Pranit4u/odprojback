@@ -17,6 +17,7 @@ router.route('/add').post((req, res) => {
     const detail = req.body.detail;
     const department = req.body.department;
     const docs = req.body.docs;
+    const private = req.body.private;
 
     const newComplaint = new Complaint({
         resolved_student: false,
@@ -32,6 +33,7 @@ router.route('/add').post((req, res) => {
         votelist: [roll],
         ongoing: "",
         addressed: "",
+        private: private,
         escalated: false
     });
 
