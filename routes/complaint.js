@@ -1,6 +1,7 @@
 const router = require('express').Router();
 let Complaint = require('../models/complaint.model');
 
+
 function getCurrentDate() {
     const separator = "-";
     let newDate = new Date();
